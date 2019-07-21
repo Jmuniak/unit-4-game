@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     </link>
     <script src="./javascript/game.js" defer></script>
 
@@ -41,10 +41,12 @@
                 <p class="wins">Wins: </p>
                 <p class="loss">Losses: </p>
             </div>
-            <div class="col-3 crystal1">CRYSTAL</div>
-            <div class="col-3 crystal2">SHINIES</div>
-            <div class="col-3 crystal3">CLICK</div>
-            <div class="col-3 crystal4">THEM</div>
+            <div class="row buttons">
+                <div class="col-3 crystal1" data-value="1" index-value="1">CRYSTAL <img> </div>
+                <div class="col-3 crystal2" data-value="2" index-value="2">SHINIES<img> </div>
+                <div class="col-3 crystal3" data-value="3" index-value="3">CLICK<img> </div>
+                <div class="col-3 crystal4" data-value="4" index-value="4">THEM <img> </div>
+            </div>
         </div>
         <div class="userTotal">
             <p>Your total score is: </p>
