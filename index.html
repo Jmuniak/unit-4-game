@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
     </link>
     <script src="./javascript/game.js" defer></script>
 
@@ -18,39 +21,49 @@
 </head>
 
 <body>
+
     <div class="container text-center">
-        <div class="row">
-            <div class="col-12 ">
+        <div class="jumbotron" style="background-color: slategray;">
+            <div class="col-12" style="color: white;">
                 <h1>CRYSTAL MAGIC GAME WOW SUCH FUN!</h1>
             </div>
-            <div class="col-12">
-                <p>DIRECTIONS BECAUSE USERS ARE DUMB
+            <div class="card col-12">
+                <h5>DIRECTIONS BECAUSE USERS ARE DUMB
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit magni error, numquam alias rerum non
                     harum? Magni dolor itaque natus est molestias officia, sit modi minus perferendis voluptate
                     consequuntur ex.
-                </p>
+                </h5>
             </div>
         </div>
     </div>
 
     <div class="container text-center">
-        <h2>CLICK THE SHINIES BELOW</h2>
+        <h2 class="card col-12 bm-2" style="background-color: slategray; color: white;">CLICK THE SHINIES BELOW</h2>
         <div class="row scoreBoardDiv text-center">
-            <div class="col-12">
+            <div class="card col-12" style="background-color: slategray; color: white;">
                 <p class="winningNumber">Winning Number: </p>
                 <p class="wins">Wins: </p>
                 <p class="loss">Losses: </p>
             </div>
-            <div class="row buttons">
-                <div class="col-3 crystal1" data-value="1" index-value="1">CRYSTAL <img> </div>
-                <div class="col-3 crystal2" data-value="2" index-value="2">SHINIES<img> </div>
-                <div class="col-3 crystal3" data-value="3" index-value="3">CLICK<img> </div>
-                <div class="col-3 crystal4" data-value="4" index-value="4">THEM <img> </div>
+            <div class="card bm-2 col-12 userTotal" style="background-color: slategray; color: white;">
+                    <p>Your total score is: </p>
+                </div>
+            <div class="row col-12 bm-2 buttons">
+                <div class="col-3" data-value="1" index-value="1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ed1f_T9cPKuedfNvcVmkiRjiDNHO_-AyYIoyGvoxOceyOM1g" alt="Red" class="img-thumbnail">
+                </div>
+                <div class="col-3" data-value="2" index-value="2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4c68NoEyGZjBrFLkQ9eUGljxd4OWooqgAFAqbQHn2dzbUnRQ" alt="Blue" class="img-thumbnail">
+                </div>
+                <div class="col-3" data-value="3" index-value="3">
+                    <img src="http://uploads.webflow.com/5a8cfc09aee91400019461b0/5a8cffec2d6ad40001720f22_Asset%205%402x.png" alt="Orange" class="img-thumbnail">
+                </div>
+                <div class="col-3" data-value="4" index-value="4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2IcX9JWR84RYBn01Bk9kYqYj8yktZvn97Chr7ZBQp-gPOQR3yA" alt="Purple" class="img-thumbnail">
+                </div>
             </div>
         </div>
-        <div class="userTotal">
-            <p>Your total score is: </p>
-        </div>
+       
 
 
 

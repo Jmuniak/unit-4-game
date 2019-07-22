@@ -2,7 +2,7 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    // classes from HTML
+    // classes from HTML if needed
 
     // .scoreBoardDiv {
     // }
@@ -45,17 +45,17 @@ $(document).ready(function () {
     console.log(crystalValues);
 
     function getCrystalHandler(crystalKey) {
-            userTotal = userTotal + crystalValues[crystalKey];
-            console.log("New userTotal " + userTotal);
-            $(".userTotal").text(userTotal);
+        userTotal = userTotal + crystalValues[crystalKey];
+        console.log("New userTotal " + userTotal);
+        $(".userTotal").text(userTotal);
 
-            if (userTotal === random) {
-                winner()
-            }
+        if (userTotal === random) {
+            winner()
+        }
 
-            else if (userTotal > random) {
-                loser()
-            }
+        else if (userTotal > random) {
+            loser()
+        }
     }
 
     $(".buttons div").on("click", function (event) {
@@ -64,7 +64,7 @@ $(document).ready(function () {
         let indexValue = _this.attr("index-value");
         console.log(indexValue);
         getCrystalHandler(indexValue);
-        $(".userTotal").text("Your total score is: " + userTotal);    
+        $(".userTotal").text("Your total score is: " + userTotal);
     });
 
     function winner() {
@@ -82,7 +82,7 @@ $(document).ready(function () {
     }
 
 
-    
+
     // $(".crystal1").on("click", getCrystalHandler(1));
     // $(".crystal2").on("click", getCrystalHandler(2));
     // $(".crystal3").on("click", getCrystalHandler(3));
@@ -98,7 +98,7 @@ $(document).ready(function () {
         crystalValues[4] = Math.floor(Math.random() * 12 + 1);
         userTotal = 0;
         $(".userTotal").text("Your total: " + userTotal);
-        
+
     }
 
 
