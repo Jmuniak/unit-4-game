@@ -57,7 +57,7 @@ $(document).ready(function () {
         $(".loss").text("Losses: " + losses);
         reset();
     }
-    // getCrystalHandler adds the userTotal to whatever the value is of the key that is pressed and checks for a win/loss condition.
+    // getCrystalHandler adds the userTotal to whatever the value is of the crystalkey that was clicked and checks for a win/loss condition.
     function getCrystalHandler(crystalKey) {
         userTotal = userTotal + crystalValues[crystalKey];
         console.log("New userTotal " + userTotal);
