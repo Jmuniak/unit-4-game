@@ -16,35 +16,3 @@ Create an on click function for the crystal buttons that uses getCrystalHandler.
 Step 3:
 Functions that run when the user wins or loses and a reset function that generates new numbers for all the crystals and the winning number. Tracks the count of wins/losses that the user has since they last refreshed.
 
-
-
------Not mine below, good .md template for future projects--------
-
-<!--//From a template I found online//-->
-<!--## Getting Started-->
-<!---->
-<!--These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.-->
-<!---->
-<!--### Prerequisites-->
-<!---->
-<!--What things you need to install the software and how to install them-->
-<!---->
-<!--```-->
-<!--Give examples-->
-<!--```-->
-<!---->
-<!--### Installing-->
-<!---->
-<!--A step by step series of examples that tell you how to get a development env running-->
-<!---->
-<!--Say what the step will be-->
-<!---->
-<!---->
-<!--## Deployment-->
-<!---->
-<!--Add additional notes about how to deploy this on a live system-->
-<!---->
-<!--## Built With-->
-<!---->
-<!--* VSCode -->
-<!---->
