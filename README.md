@@ -21,7 +21,8 @@ The on click event function for the crystal buttons that uses the getCrystalHand
 Step 3:
 Functions that run when the user wins or loses and a reset function that generates new numbers for all the crystals and the winning number. Tracks the count of wins/losses that the user has since they last refreshed.
 
-## Built With-->
+
+## Built With
 * VSCode 
 * JavaScript
 * jQuery
@@ -57,3 +58,4 @@ Functions that run when the user wins or loses and a reset function that generat
 <!---->
 <!--* VSCode -->
 <!---->
+
