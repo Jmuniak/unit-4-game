@@ -2,9 +2,9 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    // vars and constants
+    // variables
     random = Math.floor(Math.random() * 100 + 19);
-    console.log(random);
+    // console.log(random);
     $(".winningNumber").text("Winning Number: " + random);
 
     var userTotal = 0;
@@ -19,23 +19,23 @@ $(document).ready(function () {
     crystalValues[2] = Math.floor(Math.random() * 12 + 1);
     crystalValues[3] = Math.floor(Math.random() * 12 + 1);
     crystalValues[4] = Math.floor(Math.random() * 12 + 1);
-    console.log(crystalValues);
+    // console.log(crystalValues);
 
     // functions
     // click funtion
     $(".buttons div").on("click", function (event) {
-        console.log(this);
+        // console.log(this);
         let _this = $(this);
         let indexValue = _this.attr("index-value");
-        console.log(indexValue);
+        // console.log(indexValue);
         getCrystalHandler(indexValue);
         $(".userTotal").text("Your total score is: " + userTotal);
     });
-     // resets the game
-     function reset() {
+    // resets the game
+    function reset() {
         random = Math.floor(Math.random() * 102 + 19);
-        console.log(random);
-        $(".winningNumber").text(random);
+        // console.log(random);
+        $(".winningNumber").text(`Winning Number: ${random}`);
         crystalValues[1] = Math.floor(Math.random() * 12 + 1);
         crystalValues[2] = Math.floor(Math.random() * 12 + 1);
         crystalValues[3] = Math.floor(Math.random() * 12 + 1);
@@ -60,20 +60,14 @@ $(document).ready(function () {
     // getCrystalHandler adds the userTotal to whatever the value is of the crystalkey that was clicked and checks for a win/loss condition.
     function getCrystalHandler(crystalKey) {
         userTotal = userTotal + crystalValues[crystalKey];
-        console.log("New userTotal " + userTotal);
+        // console.log("New userTotal " + userTotal);
         $(".userTotal").text(userTotal);
-
         if (userTotal === random) {
             winner()
         }
-
         else if (userTotal > random) {
             loser()
         }
     }
 
 });
-// $(".crystal1").on("click", getCrystalHandler(1));
-// $(".crystal2").on("click", getCrystalHandler(2));
-// $(".crystal3").on("click", getCrystalHandler(3));
-// $(".crystal4").on("click", getCrystalHandler(4));
