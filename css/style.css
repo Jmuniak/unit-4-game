@@ -2,7 +2,20 @@
     margin-left: 0px !important;
 }
 
+.crystal {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+img {
+    max-width: 235px;
+    max-height: 235px;
+}
+
 body {
     background-color: mediumpurple;
 }
 
+footer {
+    margin: 20px 20px;
+}

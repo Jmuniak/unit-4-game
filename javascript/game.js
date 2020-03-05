@@ -49,6 +49,7 @@ $(document).ready(function () {
         alert("You Won!!");
         wins++;
         $(".wins").text("Wins: " + wins);
+        $(".wins").css("color", "yellowgreen");
         reset();
     }
     // loser function
@@ -56,6 +57,7 @@ $(document).ready(function () {
         alert("You Lose!!");
         losses++;
         $(".loss").text("Losses: " + losses);
+        $(".loss ").css("color", "red");
         reset();
     }
     // getCrystalHandler adds the userTotal to whatever the value is of the crystalkey that was clicked and checks for a win/loss condition.
